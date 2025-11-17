@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Sage – Support</title>
+  <meta
+    name="description"
+    content="Travel Sage support and contact information."
+  />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #020617;
+      --card-bg: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.4);
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.85);
+      --radius-xl: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, -apple-system-font,
+        "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top, #1d283a 0, #020617 55%, #000 100%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: linear-gradient(
+          120deg,
+          rgba(56, 189, 248, 0.04),
+          rgba(129, 140, 248, 0.05)
+        ),
+        rgba(15, 23, 42, 0.9);
+      box-shadow: 0 14px 40px rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(18px);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.8);
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.7),
+        0 12px 30px rgba(15, 23, 42, 0.9);
+      overflow: hidden;
+      background: radial-gradient(circle at top left, #38bdf8, #0f172a);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .brand-text-title {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      font-size: 1.05rem;
+    }
+
+    .brand-text-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+
+    .pill-link {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: radial-gradient(
+        circle at top,
+        rgba(56, 189, 248, 0.12),
+        transparent
+      );
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pill-link span {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+
+    main {
+      margin-top: 28px;
+    }
+
+    .content-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      background: linear-gradient(
+          145deg,
+          rgba(15, 23, 42, 0.98),
+          rgba(15, 23, 42, 0.96)
+        );
+      padding: 20px 20px 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 6px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .muted {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 14px;
+    }
+
+    .inner-card {
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+      padding: 12px 14px;
+      margin-top: 6px;
+    }
+
+    .faq {
+      margin-top: 10px;
+    }
+
+    .faq dt {
+      font-weight: 600;
+      margin-top: 14px;
+      font-size: 0.9rem;
+    }
+
+    .faq dd {
+      margin: 4px 0 8px 0;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="content/Icon-1024.png" alt="Travel Sage app icon" />
+        </div>
+        <div>
+          <div class="brand-text-title">Travel Sage</div>
+          <div class="brand-text-sub">
+            Trip planning, locations &amp; shared memories
+          </div>
+        </div>
+      </div>
+      <div class="header-links">
+        <a class="pill-link" href="index.html">
+          <span>App</span> Overview
+        </a>
+        <a class="pill-link" href="privacy-policy.html">
+          <span>Privacy</span> Policy
+        </a>
+        <a class="pill-link" href="support.html">
+          <span>Support</span> Get Help
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-card">
+        <h1>Travel Sage Support</h1>
+        <p class="muted">
+          Thanks for using Travel Sage! This page provides contact info and quick help.
+        </p>
+
+        <h2>Contact</h2>
+        <div class="inner-card">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:bkirby1967@gmail.com">bkirby1967@gmail.com</a>
+          </p>
+          <p>
+            <strong>Privacy Policy:</strong>
+            <a href="privacy-policy.html">privacy-policy.html</a>
+          </p>
+        </div>
+
+        <h2>FAQs</h2>
+        <dl class="faq">
+          <dt>How do I report a bug or request a feature?</dt>
+          <dd>
+            Send an email with a brief description and screenshots (if possible) to
+            <a href="mailto:bkirby1967@gmail.com">bkirby1967@gmail.com</a>.
+          </dd>
+
+          <dt>Where is my data stored?</dt>
+          <dd>
+            Data is stored locally on your device and optionally synced using your
+            personal iCloud account. We do not operate servers that store your
+            content.
+          </dd>
+
+          <dt>How do I request data deletion?</dt>
+          <dd>
+            Because we do not collect your data, there is no server-side data to
+            delete. You can remove the app’s local data by deleting the app from your
+            device, and you can remove iCloud data via iOS Settings → your name →
+            iCloud → iCloud Drive.
+          </dd>
+        </dl>
+
+        <p class="muted">
+          Tip: Link to this page from your App Store “App Support” URL.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Travel Sage · Support and contact information for the Travel Sage iPhone app.
+    </footer>
+  </div>
+</body>
+</html>
